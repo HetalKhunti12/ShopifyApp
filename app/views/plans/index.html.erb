@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Plans</h1>
+
+<table>
+
+  <tbody>
+    <% @plans.each do |plan| %>
+      <tr>
+        <td><%= plan.name %></td>
+        <td><%= plan.amount %></td>
+        <td><%= link_to 'select', plan %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
