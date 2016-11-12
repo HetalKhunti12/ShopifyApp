@@ -8,6 +8,6 @@ Rails.application.routes.draw do
     get 'logout' => :destroy, :as => :logout
   end
 
-  root :to => 'plans#index'
+  root :to => 'home#index'
   
 end
